@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="col-sm-6 col-md-5 col-lg-3 m-auto mt-3  entire ">
+        <input class="col-12 text-black" disabled type="text" placeholder="0" id="result">
+        <div class="row">
+            <div class="ms-2 mt-4">
+                <button class="col-3 ac mt-1" onclick="clearAll()">AC</button>
+                <button class="col-3 sign fs-3 text-secondar fw-bold mydelete" onclick="myDelete()">DEL</button>
+                <button class="col-3 sign" onclick="enterNo('%')">%</button>
+                <button class="col-2 sign" onclick="enterNo('/')">/</button>
+            </div>
+            <div class="mt-4 ms-2">
+                <button class="col-3" onclick="enterNo('1')">1</button>
+                <button class="col-3"onclick="enterNo('2')">2</button>
+                <button class="col-3" onclick="enterNo('3')">3</button>
+                <button class="col-2 sign" onclick="enterNo('+')">+</button>
+            </div>
+            <div class="mt-4 ms-2">
+                <button class="col-3" onclick="enterNo('4')">4</button>
+                <button class="col-3" onclick="enterNo('5')">5</button>
+                <button class="col-3" onclick="enterNo('6')">6</button>
+                <button class="col-2 sign" onclick="enterNo('*')">*</button>
+            </div>
+            <div class="mt-4 ms-2">
+                <button class="col-3" onclick="enterNo('7')">7</button>
+                <button class="col-3" onclick="enterNo('8')">8</button>
+                <button class="col-3" onclick="enterNo('9')">9</button>
+                <button class="col-2 sign" onclick="enterNo('-')">-</button>
+            </div>
+            <div class="mt-4 ms-2 last mb-5">
+                <button class="col-3" onclick="enterNo('.')">.</button>
+                <button class="col-3" onclick="enterNo('0')">0</button>
+                <button class="col-3" onclick="enterNo('000')">000</button>
+                <button class="col-2 equals" onclick="solve()">=</button>
+            </div>
+        </div>
+        </div>
+</body>
+</html>
